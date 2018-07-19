@@ -8,4 +8,4 @@ This is some sample codes written for beginners to javascript
 3. Open the code in any text editor of your choice and try walking throught it individually.
 
 Thanks. 
-CopyRight [Hackshade Techs](https://www.google.com) by Matovu Ronald
+CopyRight [Hackshade Techs](http://hackshadetechs.com) by Matovu Ronald
