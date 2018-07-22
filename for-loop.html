@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>For Loop</title>
+</head>
+<body>
+    <div id="output"></div>
+    <script>
+        var output = document.getElementById("output");
+
+        var answer = prompt("How many times do want to loop?");
+
+        for (var x = 0; x < answer; x++) {
+            output.innerHTML += x+ " <br>";            
+        }
+
+        output.innerHTML += "The Final Value of X is " + x;
+    </script>
+</body>
+</html>
