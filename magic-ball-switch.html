@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Magic Ball Switch</title>
+</head>
+<body>
+    <div id="output"></div>
+    <script>
+        var answer = "something went wrong";
+        var output = document.getElementById("output");
+        var question = prompt("Ask me anything");
+        var randomNumber = Math.floor(Math.random()*6);
+        switch (randomNumber) {
+            case 0:
+                answer = "It will work out";
+                break;
+            case 1:
+                answer = "Maybe Maybe not";
+                break;
+            case 2:
+                answer = "Probably not";
+                break;
+            case 3:
+                answer = "Highly likely";
+                break;
+            default:
+                answer = "I don't know about that";
+                break;
+        }
+
+        output.innerHTML = "You asked me " + question + " <br> ! I think that is " + answer;
+
+    </script>
+</body>
+</html>
