@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array Item Remover</title>
+</head>
+<body>
+    <script>
+        var array = [3, 4, 5, 77, 33, 22, 4, 1, 55, 2, "cat", "dog", "rabbit", "bird"];
+        array.sort();
+        console.log(array);
+        var answer = prompt("What do you want to remove?");
+        array.splice(array.indexOf(answer), 1);
+        console.log(array);
+        
+
+    </script>
+</body>
+</html>
