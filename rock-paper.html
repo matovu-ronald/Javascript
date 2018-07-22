@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock Paper</title>
+</head>
+<body>
+    <div id="output"></div>
+    <script>
+        var output = document.getElementById("output");
+        var player = prompt("Do you choose Rock, Paper or Scissors?");
+        var ps = player.charAt(0).toUpperCase();
+        var win = false;
+        var computer = Math.random();
+
+        if (computer < 0.34) {
+            computer = "Rock";
+        } else if (computer < 0.67) {
+            computer = "Paper";
+        } else {
+            computer = "Scissors";
+        }
+
+        var cs = computer.charAt(0).toUpperCase();
+        console.log(computer);
+        var html = "";
+
+        if (ps == cs) {
+            html = "IT IS A TIE";
+        } else {
+            if (ps == 'R') {
+                player = "Rock";
+                if(cs == 'S') { win = true; }
+            } else if (ps == 'P') {
+                player = "Paper";
+                if(cs == 'R') { win = true; }
+            } else {
+                player = "Scissors";
+                if(cs == 'P') { win = true; }
+            }
+            
+            if (win) {
+                html += "Player Wins";
+            } else {
+                html += "Computer wins"
+            }
+        }
+
+        output.innerHTML = "Player Vs Computer <br> " + player + " Vs " + computer + "<br> Result: " + html;
+        
+    </script>
+</body>
+</html>
