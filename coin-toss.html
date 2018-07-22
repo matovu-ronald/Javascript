@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coin Toss</title>
+</head>
+<body>
+    <div id="output"></div>
+    <script>
+        var html = "Something went wrong!!";
+        var output = document.getElementById("output");
+        var question = prompt("heads or tails");
+        var result = question == "heads" ? 1 : 0;
+        var randomNumber = Math.floor(Math.random()*2);
+
+        if (result == randomNumber) {
+            html = "Wooow, You Win, You have earned yourself $50";
+        }else {
+            html = "Buuhh, Sorry try your luck again";
+        }
+
+        output.innerHTML = html;
+    </script>
+</body>
+</html>
