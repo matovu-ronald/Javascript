@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array Methods Pop and Push</title>
+</head>
+<body>
+    <script>
+        var animals = ['cat', 'dog', 'rabbit', 'bird', 'fish', 'zebra'];
+        /* animals.push("Buffalo"); // Add an item at the end of the array
+        console.log(animals);
+        animals.pop(); // Remove last item from the end of the array
+        console.log(animals);
+        animals.shift(); // Remove first item from the array
+        console.log(animals);
+        animals.unshift("Horse"); // Add item at the start of the array.
+        console.log(animals);
+        animals.splice(2, 1); // Remove item starting from the specified index to the specified position
+        console.log(animals);
+        animals.reverse();
+        console.log(animals); */
+        // animals.sort();
+        // console.log(animals);
+        // animals.reverse();
+        /* animals.sort().reverse();
+        console.log(animals); */
+        var startValue = animals.length;
+        animals[20] = "buffalo";
+        animals.fill("mouse", startValue, (animals.length -1));
+        console.log(animals);
+        
+
+
+        
+    </script>
+</body>
+</html>
