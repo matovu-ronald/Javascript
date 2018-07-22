@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Do While Loop</title>
+</head>
+<body>
+    <div id="output"></div>
+
+    <script>
+        var output = document.getElementById("output");
+        var x = 0;
+        do {
+            output.innerHTML += x + " <br>";
+            x++
+        } while (x < 10);
+        output.innerHTML += "Final value of x = "+ x + " <br> ";
+    </script>
+</body>
+</html>
