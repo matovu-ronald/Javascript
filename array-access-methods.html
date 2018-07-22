@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array Access Methods</title>
+</head>
+<body>
+    <script>
+        var animals = ["cat", "dog", "rabbit", "bird"];
+        var search = prompt("What are you looking for?");
+        var posIndex = animals.indexOf(search);
+        posIndex > -1 ? alert(search + " has been found") : alert(search + " was not found");
+    </script>
+</body>
+</html>
